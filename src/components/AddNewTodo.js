@@ -6,6 +6,7 @@ const AddNewTodo = ({ addTodo }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     addTodo(todos);
+    setTodos("");
   };
   return (
     <form onSubmit={handleSubmit}>
